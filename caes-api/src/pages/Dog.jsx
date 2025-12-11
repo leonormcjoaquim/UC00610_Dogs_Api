@@ -9,7 +9,7 @@ function Dog() {
 
     useEffect( function() {
         async function loadBreeds() {
-            const res = await fetch('https://dogapi.dog/api/v2/breeds?page[size]=300');
+            const res = await fetch('https://dogapi.dog/api/v2/breeds?page[size]=20');
             const json = await res.json();
             const breedsData = json.data;
 
