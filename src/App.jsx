@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
+import ScrollTopo from "./components/ScrollTopo";
 import Dog from "./pages/Dog"
 import DogDetail from "./pages/DogDetails";
 import FunFacts from "./pages/FunFacts";
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollTopo />
       <div className="d-flex flex-column min-vh-100">
         <Navbar toggleTheme={toggleTheme} theme={theme} />
 

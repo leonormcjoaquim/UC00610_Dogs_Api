@@ -16,7 +16,7 @@ function Dog() {
 
     useEffect(() => {
         async function loadBreeds() {
-            const res = await fetch('https://dogapi.dog/api/v2/breeds?page[size]=1000');
+            const res = await fetch('https://dogapi.dog/api/v2/breeds?page[size]=20');
             const json = await res.json();
             const breedsData = json.data;
 
@@ -126,7 +126,7 @@ function Dog() {
                                     <h5 className="card-title">{breed.attributes.name}</h5>
                                     <p className="card-text">{breed.attributes.description || "Sem descrição"}</p>
                                     <p className="text-muted mb-0">
-                                        Hipoalergenico: {breed.attributes.hypoallergenic ? "Sim" : "Nao"}
+                                        Hipoalergénico: {breed.attributes.hypoallergenic ? "Sim" : "Não"}
                                     </p>
                                 </div>
                             </Link>
