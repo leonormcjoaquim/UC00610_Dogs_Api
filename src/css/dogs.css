@@ -1,0 +1,103 @@
+/*
+Este CSS é apenas para os cartões da página dos cães
+*/
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 40px rgba(15, 27, 44, 0.14);
+}
+
+.dog-image-wrapper {
+    aspect-ratio: 4 / 3;
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text {
+    color: var(--muted);
+}
+
+.breed-title {
+    color: var(--text-color);
+}
+
+.pagination .page-link {
+    color: var(--text-color);
+    border-color: var(--border-color);
+    background: var(--card-bg);
+    padding: 10px 16px;
+    font-weight: 600;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pagination .page-link:hover {
+    background: var(--accent-2);
+    color: #ffffff;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: var(--muted);
+    background-color: var(--card-bg);
+}
+
+.filter-bar {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+}
+
+.filter-bar .form-label {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.filter-bar .form-control,
+.filter-bar .form-select {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.filter-bar .form-control::placeholder {
+    color: var(--muted);
+}
+
+.dog-details-page h1,
+.dog-details-page .lead {
+    color: var(--text-color);
+}
+
+.dog-details-page .btn-outline-secondary {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.dog-details-page .btn-outline-secondary:hover {
+    background: var(--card-bg);
+    color: var(--accent-2);
+}

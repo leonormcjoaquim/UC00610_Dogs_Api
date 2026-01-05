@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --bg-color: #f4f7fb;
+    --text-color: #0f1b2c;
+    --card-bg: #ffffff;
+    --border-color: #dfe7f1;
+    --nav-bg: rgba(255, 255, 255, 0.65);
+    --nav-text: #0f1b2c;
+    --nav-solid-bg: rgba(15, 27, 44, 0.95);
+    --nav-solid-text: #e6ecf7;
+    --nav-shadow: none;
+    --nav-solid-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+    --accent: #f59e0b;
+    --accent-2: #2f6f64;
+    --muted: #5c6b7a;
+    --shadow: 0 18px 40px rgba(15, 27, 44, 0.08);
+}
+
+[data-theme="dark"] {
+    --bg-color: #0f1624;
+    --text-color: #e6ecf7;
+    --card-bg: #131c2d;
+    --border-color: #1f2a3f;
+    --nav-bg: rgba(12, 20, 34, 0.9);
+    --nav-text: #e6ecf7;
+    --nav-solid-bg: rgba(5, 9, 18, 0.96);
+    --nav-solid-text: #e6ecf7;
+    --nav-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    --nav-solid-shadow: 0 18px 32px rgba(0, 0, 0, 0.45);
+    --accent: #f8af3b;
+    --accent-2: #6ac2a8;
+    --muted: #9db1c9;
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Manrope', 'Segoe UI';
+    margin: 0;
+    line-height: 1.6;
+}
+
+.page-content {
+    padding-top: 88px;
+}
+
+@media (max-width: 991px) {
+    .page-content {
+        padding-top: 72px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-family: 'Playfair Display', 'Manrope', serif;
+    font-weight: 700;
+}
+
+.lead {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-2);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+}
+
+.list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.btn {
+    font-weight: 600;
+}
+
+main {
+    background-color: var(--bg-color);
+}

@@ -1,0 +1,95 @@
+/*
+Este CSS é apenas para a navbar em todas as páginas
+*/
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-transparent {
+    background: var(--nav-bg) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--nav-shadow);
+}
+
+.navbar-solid {
+    background: var(--nav-solid-bg) !important;
+    box-shadow: var(--nav-solid-shadow);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--nav-text) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--nav-text);
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #f59e0b !important;
+    background: rgba(245, 158, 11, 0.12);
+}
+
+.navbar-solid .navbar-brand,
+.navbar-solid .nav-link {
+    color: var(--nav-solid-text) !important;
+}
+
+.theme-toggle {
+    background: linear-gradient(135deg, #f59e0b, #f8af3b);
+    color: #0f1b2c;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.24);
+}
+
+.theme-toggle:hover {
+    color: #0f1b2c;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 14px;
+        padding: 12px;
+        margin-top: 12px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .navbar-dark .navbar-collapse {
+        background: rgba(12, 20, 34, 0.98);
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .theme-toggle {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
