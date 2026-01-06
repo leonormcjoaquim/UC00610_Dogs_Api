@@ -3,7 +3,7 @@ import '../css/footer.css';
 export default function Footer() {
     return (
         <footer className="footer">
-            <div className="container py-5">
+            <div className="container py-3">
                 <div className="row align-items-start justify-content-center text-center text-lg-start">
 
                     <div className="col-12 col-lg-5 d-flex flex-column align-items-center">

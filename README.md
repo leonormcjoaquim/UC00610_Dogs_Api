@@ -1,16 +1,71 @@
-# React + Vite
+﻿# Cães API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação React criada com Vite para a UC00610 para consolidar o aprendido sobre React e "noSql". A aplicação foi criada em torno de duas API's públicas:
 
-Currently, two official plugins are available:
+- [Dog Api by CEO](https://dog.ceo/dog-api/) - Utilizada apenas para as imagens
+- [Dog Api by Kinduff](https://dogapi.dog/) - Utilizada para todos os factos e descrições dos cães
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos
 
-## React Compiler
+- Node.js >= 18
+- npm
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalação
 
-## Expanding the ESLint configuration
+Instalar todas as dependências com:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## Correr projeto localmente
+
+Arranca o servidor com:
+
+```bash
+npm run dev
+```
+
+Abre o URL indicado no terminal (por defeito `http://localhost:5173`).
+
+Ou, pode sempre ver o projeto a correr live através de vercel aqui:
+
+[CaoPanheiros](https://uc-00610-dogs-api-4b24.vercel.app/)
+
+## Estrutura
+
+```bash
+caes-api
+   ├─ eslint.config.js
+   ├─ index.html
+   ├─ package-lock.json
+   ├─ package.json
+   ├─ public
+   ├─ README.md
+   ├─ src
+   │  ├─ App.css                #guarda o css usado na aplicação inteira
+   │  ├─ App.jsx
+   │  ├─ assets                 #imagens
+   │  │  ├─ dog.png             
+   │  │  └─ pata.png
+   │  ├─ components
+   │  │  ├─ EsqueletoCao.jsx    # componente que aparece quando está "loading" os cães
+   │  │  ├─ Footer.jsx          #footer 
+   │  │  ├─ Hero.jsx            #secção Hero na página inicial
+   │  │  ├─ Navbar.jsx          #Navbar 
+   │  │  └─ ScrollTopo.jsx      #Componente para mudar para o topo da página 
+   │  ├─ css
+   │  │  ├─ dogs.css            #estilos para cães
+   │  │  ├─ esqueletoCao.css    #estilos para loading cães
+   │  │  ├─ footer.css          #estilos para footer
+   │  │  ├─ funfacts.css        #estilos para os funFacts
+   │  │  ├─ hero.css            #estilos para secção hero
+   │  │  └─ navbar.css          #estilos para navbar
+   │  ├─ main.jsx
+   │  └─ pages 
+   │     ├─ Dog.jsx             #Página dos cães 
+   │     ├─ DogDetails.jsx      #Página para detalhes dos cães
+   │     └─ FunFacts.jsx        #Página para funfacts
+   └─ vite.config.js
+
+```
